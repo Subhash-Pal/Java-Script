@@ -1,0 +1,23 @@
+<html>
+<body>
+<p id ="looping"></p>
+<button onclick="myloop()"> press me </button>
+<script src="./scripts/main.js"> 
+</script>  
+<script> 
+function myloop(){
+var temp="";
+var i;
+const array=[10,12,14,16,18]
+//for(i=0;i<=10;i++){
+//temp+="The loop value is " +i + "<br>" ;
+//}
+for (let value of array){
+temp+= value + "<br>" ;
+ }
+document.getElementById("looping").innerHTML=temp
+
+}
+</script> 
+</body>
+</html>
